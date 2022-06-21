@@ -23,6 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        alignment: Alignment.center,
         margin: const EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -33,8 +34,15 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             Icon(
               Icons.local_airport,
-              size: 100,
+              size: 200,
               color: Colors.blueAccent,
+            ),
+            Padding(
+              padding: EdgeInsets.all(18.0),
+              child: Text(
+                "Welcome",
+                style: TextStyle(fontSize: 20, color: Colors.blue),
+              ),
             )
           ],
         ),

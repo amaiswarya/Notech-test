@@ -33,6 +33,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+          padding: const EdgeInsets.all(10),
+          margin: const EdgeInsets.all(12),
           child: responseMAp == null
               ? const Center(child: CircularProgressIndicator())
               : Center(
