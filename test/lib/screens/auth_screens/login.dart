@@ -117,6 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                 ),
+                                obscureText: true,
                                 decoration: InputDecoration(
                                   focusColor: Colors.white,
                                   prefixIcon: const Icon(
@@ -150,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: () {
                             if (formkey.currentState!.validate()) {
                               {
-                                Navigator.push(
+                                Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => Home()));
